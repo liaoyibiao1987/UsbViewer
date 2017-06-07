@@ -117,7 +117,7 @@ namespace UsbRemoveHidden
         [DllImport("setupapi.dll", CharSet = CharSet.Auto)]
         public static extern Boolean SetupDiCallClassInstaller(UInt32 InstallFunction, IntPtr DeviceInfoSet, SP_DEVINFO_DATA DeviceInfoData);
         [DllImport("setupapi.dll", CharSet = CharSet.Auto)]
-        public static extern Boolean SetupDiRemoveDevice(IntPtr DeviceInfoSet, SP_DEVINFO_DATA DeviceInfoData);
+        public static extern Boolean SetupDiRemoveDevice(IntPtr DeviceInfoSet, SP_DEVINFO_DATA DeviceInfoData); 
 
         [DllImport("setupapi.dll", CharSet = CharSet.Auto)]
         public static extern Boolean SetupDiClassNameFromGuid(ref Guid ClassGuid, StringBuilder className, Int32 ClassNameSize, ref Int32 RequiredSize);
